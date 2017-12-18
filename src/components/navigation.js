@@ -1,6 +1,5 @@
 import React from 'react';
 import './navigation.css';
-import Link from 'react-router-dom';
 
 
 export default class Navigation extends React.Component {
@@ -10,12 +9,12 @@ export default class Navigation extends React.Component {
 			<nav >
 		        <ul className="navBar">
 		        	<li className="aboutGame">
-		        		<Link to='/about-game'>About Game</Link>
+		        		<a href='/about-game'>About Game</a>
 		        	</li>
 		        	<li className="newGame">
-		        		<Link to='/' 
-		        			  onClick={this.props.onClickNewGame}>New Game
-		        		</Link>
+		        		<a 	href='#' 
+		        			onClick={this.props.onClickNewGame}>New Game
+		        		</a>
 		        	</li>
 		        </ul>
         	</nav>
