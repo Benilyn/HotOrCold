@@ -1,0 +1,16 @@
+.navBar li {
+	display: inline-flex;
+	list-style: none;
+}
+
+.navBar {
+	padding: 1em 1.5em;
+}
+
+.navBar li:first-child {
+	float: left;
+}
+
+.navBar li:last-child {
+	float: right;
+}
