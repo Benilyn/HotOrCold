@@ -32,8 +32,14 @@
 }
 .guess-list {
   display: inline-flex;
+  width: 80%;
+  height: 4em;
+  padding: 0;
+  background-color: white;
+  border: solid 0.05em;
 }
 .guess-list li {
   list-style: none;
   padding-right: .75em;
 }
+
