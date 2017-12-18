@@ -20,9 +20,10 @@ class App extends Component {
     event.preventDefault();
   }
 
-  handleNewGame(event) {
+  handleNewGame() {
     const secretNumber = Math.floor(Math.random()*100)+1;
     this.setState({guessList: []});
+    console.log(secretNumber);
   }
 
   render() {
@@ -36,7 +37,7 @@ class App extends Component {
         <div className="App">
           <header>
             <Navigation onClickNewGame={this.newGame}/>
-            <h1 className="App-title">Hot or Cold</h1>
+            <h1 className="App-title">HOT or COLD</h1>
           </header>
           
           <div className="guessGame">
